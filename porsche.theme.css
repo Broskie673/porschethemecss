@@ -1,0 +1,25 @@
+/**
+ * @name Porsche GT3 RS
+ * @description Moving Porsche background
+ * @version 1.0.0
+ */
+
+#app-mount {
+    background: transparent !important;
+}
+
+#app-mount::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("YOUR-GIF-LINK-HERE") center/cover no-repeat;
+    z-index: -100;
+}
+
+#app-mount::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: -99;
+}
